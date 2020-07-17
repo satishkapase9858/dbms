@@ -2,4 +2,4 @@ select onum,amount,odate from orders;
  select * from customer where snum=1001;
  select city, sname,snum,comm from salespeople ; 
  select rating,cname from customer where city='san jose';
- select distinct (snum),onum from orders;
+ select distinct (snum),onum from orders;lkk
