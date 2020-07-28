@@ -1,0 +1,40 @@
+
+ 1)center justification
+ select concat(lpad(substr(cname,1,4),25,'*') , rpad(substr(cname,length(substr(cname,1,5)),10),25-2,'*')) from customer;
+ 
+ 
+ 2)initcap
+   select concat(upper(substr(cname,1,1)),lower(substr(cname,2)))as name from customer;
+  Assignment No 7
+Name		:satish kapase
+Student Id	:200240320099
+Center		:Kharghar
+==============================================================
+1) Write a query that counts all orders for October 3.
+
+ select count(*) from orders where odate='1990-10-03';
+=============================================================
+2) Write a query that counts the number of different non-NULL city values in the
+Customers table.
+
+select count(*) from customers where city is not null;
+=======================================================================
+3) Write a query that selects each customer’s smallest order
+
+select min(amt) ,cnum from orders group by cnum;
+========================================================
+4) Write a query that selects the first customer, in alphabetical order, whose name
+begins with G
+
+select cname from customers where cname like'G%' order by cname;
+======================================================================
+5) Write a query that selects the highest rating in each city.
+
+select max(rating),city from customers group by city;
+===========================================================================
+6) Write a query that counts the number of salespeople registering orders for each
+day. (If a salesperson has more than one order on a given day, he or she should be
+counted only once.).
+
+select count(distinct odate,snum) from orders;
+=======================================================================================

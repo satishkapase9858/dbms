@@ -1,0 +1,18 @@
+satish kapase
+200240320099
+ 
+1)Which field of the Customers table is the primary key?
+
+--> in a customer table primary key is cnum .because by using cmum we will be find row in the table.
+
+2)What is the 4th column of the Customers table?
+
+--->"rating" is the fourth column in a customer table.
+
+3)What is another word for row? For column?
+
+---->"tuple and attribute" are another name for row and column.
+
+4)Why isn’t it possible to see the first five rows of a table?
+
+---->this will asccupy different address and allocate random memory.
